@@ -21,7 +21,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'app_server', 'views'));
 app.set('view engine', 'jade');
 
-var url = "mongodb://localhost:27017/TraderApp_DB";
+var url = "mongodb+srv://admin:admin@cluster0.rhzqz.mongodb.net/trader";
 mongoose.connect(url, (err) => {
   if (err) throw err;
 });
